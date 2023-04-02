@@ -1,0 +1,147 @@
+.collection-container{
+    margin-top: 8em;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.title h1{
+    font-size: 3rem;
+}
+.title button{
+    padding: .8em 2.5em;
+    background: none;
+    border: 2px solid var(--Black);
+    text-transform: uppercase;
+    font-size: .8rem;
+    color: var(--Black);
+    font-weight: bold;
+    transition: .3s all linear;
+}
+.title button:hover{
+    background: var(--Black);
+    color: var(--White);
+    cursor: pointer;
+
+}
+.grid-container{
+    margin-top: 3.5em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    column-gap: 2em;
+    row-gap: 2em;
+    padding:  0 2em 2em;
+}
+.grid{
+    position: relative;
+    overflow: hidden;
+}
+.grid-img{
+    object-fit: cover;
+    transition: .3s  ease-in-out;
+    
+    
+}
+.grid-img:hover{
+    filter: opacity(.8);
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.grid-title{
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    padding: 0 1.5em 1em 1em;
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: var(--White);
+    font-weight: 600;
+}
+
+/*MEDIA QUERY*/
+
+@media screen and (max-width:1200px) {
+    .grid-title{
+        font-size: 1.7rem;
+        
+    }
+}
+@media screen and (max-width:1035px) {
+    .grid-container{
+        row-gap: 1.5em;
+    }
+    .grid-title{
+        font-size: 1.7rem;
+        padding: .5em
+        ;
+        
+    }
+}
+@media screen and (max-width:910px) {
+    .grid-container{
+       row-gap:  1em;
+    }
+    .grid-title{
+        font-size: 1.4rem;
+        padding:  .5em 0 1em .5em
+        ;
+        
+    }
+}
+@media screen and (max-width:835px) {
+    .grid-container{
+       row-gap:  1em;
+    }
+    .grid-title{
+        font-size: 1.4rem;
+        padding:  .5em 0 1em .45em
+        ;
+        
+    }
+}
+@media screen and (max-width:785px) {
+    .grid-container{
+        gap:  .5em;
+     }
+    .grid-title{
+        font-size: 1.2rem;
+        padding: .4em
+        ;
+        
+    }
+}
+@media screen and (max-width:700px) {
+    .grid-container{
+        margin-top: 3.5em;
+        grid-auto-flow: row;
+        grid-template-columns:  1fr;
+        grid-template-rows: repeat(8,1fr);
+        row-gap: .8em;
+        
+    }
+
+    .grid{
+        width: 100%;
+    }
+
+
+}
+@media screen and (max-width:620px) {
+    
+    .title h1{
+     font-size: 1.9rem;
+    }
+ 
+ }
+@media screen and (max-width:440px) {
+   .collection-container{
+    margin-top: 1em;
+   }
+   .title h1{
+    font-size: 1.5rem;
+   }
+
+}

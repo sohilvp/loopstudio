@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+
+
+:root{
+    --White : hsl(0, 0%, 100%);
+    --Black : hsl(0, 0%, 0%);
+    --Dark-gray : hsl(0, 0%, 55%);
+    --Very-dark-gray : hsl(0, 0%, 41%);
+    --ff-head :'Alata', sans-serif;
+    --ff-logo: 'Tilt Neon', cursive;
+    --ff-txt:'Josefin Sans', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 15px;
+
+}
+body{
+    max-width: 1540px;
+    min-width: 340px;
+    font-family: var(--ff-txt);
+}
+img{
+    max-width: 100%;
+}
+ul{
+    list-style: none;
+}
+.width-container{
+    width: 80%;
+    margin: 0 auto;
+}
